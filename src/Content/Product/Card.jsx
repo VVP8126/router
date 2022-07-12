@@ -9,8 +9,8 @@ const Card = (props) => {
 		  </header>
 		  <div className="w3-container">
 			<p className="w3-border-bottom">Full product name</p>
-			<img src="" className="w3-circle w3-left w3-border w3-padding" alt="IMG" width="20px" />
-			<div className="w3-container w3-left">
+			<center><img src={props.imgsrc} className="w3-circle w3-border w3-padding" alt="IMG" width="30px" height="45px" /></center>
+			<div className="w3-container">
 			  <p>Some information</p>
 			  <p>More information</p>
 			  <p>Much more information</p>

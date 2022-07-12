@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Card from "./Product/Card";
+import dt from "./../Data/data.js"
 
 const Products = () => {
   return (
@@ -7,9 +8,7 @@ const Products = () => {
         <h2 className="w3-padding">Product List</h2>
         <p className="w3-padding">Select product</p>
         <div className="w3-row-padding">
-          <Card name="Name1" path="1" />
-          <Card name="Name2" path="2" />
-          <Card name="Name3" path="3" />
+          { dt.map(d => <Card key={d.id} name={d.name} path={d.id} imgsrc={d.imgSrc} /> ) }
         </div>
         <Outlet />
     </div>)
