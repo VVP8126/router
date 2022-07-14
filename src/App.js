@@ -1,3 +1,6 @@
+// Large repository of course author:
+// https://github.com/john-smilga/react-projects
+
 import './App.css';
 // import Bar from './Bar/Bar'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
